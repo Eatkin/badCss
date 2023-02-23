@@ -16,6 +16,19 @@ div {
  transform: rotate(-1deg);
 }
 
+#content	{
+	margin: auto;
+	width: 50%;
+	background-color: white;
+	border-style: solid;
+}
+
+@media (max-width: 1280px) {
+	#content	{
+		width: 90%;
+	}
+}
+
 @keyframes rotate	{
 	0% {
 	transform: rotate(0deg);
