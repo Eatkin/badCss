@@ -1,0 +1,102 @@
+body	{
+	animation-name: rotate;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-delay: 5s;
+	animation-direction: alternate;
+	animation-timing-function: linear;
+	
+	background-image: url("https://indilens.com/wp-content/uploads/2020/06/Rick-Astley-Just-Got-Rickrolled-on-Reddit.jpg");
+	background-repeat: repeat;
+
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+div {
+ transform: rotate(-1deg);
+}
+
+@keyframes rotate	{
+	0% {
+	transform: rotate(0deg);
+	background-position: 0% 0%;
+	}
+	48% {transform: rotate(0deg);}
+	52% {transform: rotate(360deg);}
+	100% {
+	transform: rotate(360deg);
+	background-position: 10% 10%;
+	}
+}
+
+p	{
+	animation-name: text-shit;
+	animation-duration: 30s;
+	animation-iteration-count: infinite;
+	animation-delay: 10s;
+	animation-direction: alternate;
+}
+
+p:hover	{
+	animation-duration: 300s;
+}
+
+@keyframes text-shit	{
+	0%	{
+	font-size: 10px;
+	transform: scaleY(1);
+	background: #9dac25;
+	}
+	10%	{
+	font-size: 30px;
+	}
+	20%	{
+	font-size: 20px;
+	}
+	30%	{
+	font-size: 10px;
+	}
+	40%	{
+	font-size: 100px;
+	}
+	50%	{
+	font-size: 120px;
+	background: #e281f9;
+	}
+	100%	{
+	font-size: 10px;
+	transform: scaleY(1.5);
+	background: #362003;
+	}
+}
+
+li	{
+	animation-name: spin-skew;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-delay: 0s;
+	animation-timing-function: linear;
+}
+
+@keyframes spin-skew	{
+	0%	{
+	transform: rotate(0deg);
+	transform: skew(0, 0);
+	}
+	50%	{
+	transform: skew(37deg, 12deg);
+	}
+	100%	{
+	transform: rotate(360deg);	
+	transform: skew(0, 0);
+	}
+}
+
+a	{
+	font-size: 100px;
+	transform: scaleX(0.1);
+}
+
+a:hover	{
+	font-size: 150px;
+}
